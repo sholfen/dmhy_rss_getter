@@ -37,10 +37,10 @@ def load_ani_list(config_path='ani_list.txt'):
 
 def main_flow():
     conf = load_config()
-    api = twitter.Api(consumer_key='xBRI3AyW9KISPblLLJmdzpyKe',
-                      consumer_secret='knpZVkRTCnRKf83rZm2H5E26VRjTzQWhI4NXF6eKbIWdJ5ZEEf',
-                      access_token_key='14957307-Z3bxikJTeorKvWqPpmKpWLjTOHGZ9fkL0zmje0dwc',
-                      access_token_secret='M1doOrG0hxmQzWAV0BPr7e9cWu2kiZ5dNGIhd8qpchaSX')
+    api = twitter.Api(consumer_key='your key',
+                      consumer_secret='your key',
+                      access_token_key='your key',
+                      access_token_secret='your key')
 
     patterns = load_ani_list()
     statuses = api.GetUserTimeline(
